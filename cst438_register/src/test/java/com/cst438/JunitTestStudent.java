@@ -63,7 +63,8 @@ public class JunitTestStudent {
 
         mockMvc.perform(post("/student/hold")
                 .contentType(MediaType.APPLICATION_JSON)
-                .param("email", email))
+                .content("{\"name\":\"Makoto Edamura\", \"email\":\"medamura@csumb.edu\"}")
+                .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
 
@@ -81,7 +82,8 @@ public class JunitTestStudent {
 
         mockMvc.perform(post("/student/deleteHold")
                 .contentType(MediaType.APPLICATION_JSON)
-                .param("email", email))
+                .content("{\"name\":\"Makoto Edamura\", \"email\":\"medamura@csumb.edu\"}")
+                .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
 }

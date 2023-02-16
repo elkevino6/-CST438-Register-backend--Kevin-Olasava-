@@ -65,7 +65,6 @@ public class JunitTestStudent {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\"name\":\"Makoto Edamura\", \"email\":\"medamura@csumb.edu\"}")
                 .accept(MediaType.APPLICATION_JSON))
-//                .param("email", email))
                 .andExpect(status().isOk());
     }
 
@@ -85,7 +84,6 @@ public class JunitTestStudent {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\"name\":\"Makoto Edamura\", \"email\":\"medamura@csumb.edu\"}")
                 .accept(MediaType.APPLICATION_JSON))
-//                .param("email", email))
                 .andExpect(status().isOk());
     }
 }

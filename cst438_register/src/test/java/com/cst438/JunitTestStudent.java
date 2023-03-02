@@ -86,4 +86,4 @@ public class JunitTestStudent {
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
-}
+} //adding comment to junit to test if we're able to make a new pull request since i made a mistake closing it 

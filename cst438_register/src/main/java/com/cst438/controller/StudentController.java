@@ -73,7 +73,7 @@ public class StudentController {
 			
 			return student;
 		} else {
-			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Student Record Does Not Exist");
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Student non Existent");
 		}
 	}
-}
+} //adding comment to studentcontroller to test if we're able to make a new pull request since i made a mistake closing it 

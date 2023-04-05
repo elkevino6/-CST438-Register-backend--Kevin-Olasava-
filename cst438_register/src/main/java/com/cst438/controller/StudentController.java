@@ -3,6 +3,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,6 +16,9 @@ import com.cst438.domain.StudentRepository;
 
 
 @RestController
+
+@CrossOrigin(origins = {"http://localhost:3000"})
+
 public class StudentController {
 
 	@Autowired 
